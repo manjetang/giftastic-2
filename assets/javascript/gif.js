@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('button').on('click', function() {
         var animal = $(this).data('name');
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=10";
-
+        
         $.ajax({
             url: queryURL,
             method: 'GET'
@@ -76,7 +76,7 @@ $(document).ready(function(){
             $("#animalsbuttons").append(newButton);
                 console.log("Work");
 
-            queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animalButton + "&api_key=dc6zaTOxFJmzC&limit=10";
+            queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animalButton + "&api_key=ausyDfJ5blzD5EapRNqVjp1LKhmg0nA8=10";
                 console.log(animalButton);
 
             $.ajax({
